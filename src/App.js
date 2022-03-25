@@ -1,10 +1,12 @@
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
+import ItemListContainer from './Components/ItemListContainer/itemListContainer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <ItemListContainer greeting="Buenas"/>
       <header className="App-header">
         <img src={'./imagenes/logo192.png'} className="App-logo" alt="logo" />
         <p>
