@@ -1,26 +1,26 @@
+import React, { useState } from 'react';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
-import ItemListContainer from './Components/ItemListContainer/itemListContainer';
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import Counter from './Components/Counter/Counter';
 
-function App() {
+const App = () => {
+  const [show, setShow] = useState(true)
+
+  const handleOnAdd = (quantity) => {
+    console.log('Se agregaron ${quantity} productos')
+  }
+
   return (
     <div className="App">
-      <NavBar />
-      <ItemListContainer greeting="Buenas"/>
-      <header className="App-header">
-        <img src={'./imagenes/logo192.png'} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <NavBar />
       </header>
+      <main className='app-main'>
+        <ItemListContainer greeting="Buenas"/>
+        <button onClick={() => setShow(!show)}>{ show ? 'desmontar contador' : 'montar contador'}</button>
+        { show ? <Counter initial={1} stock={5} onAdd={handleOnAdd}/> : null}
+      </main>
     </div>
   );
 }
