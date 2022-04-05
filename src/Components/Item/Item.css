@@ -1,0 +1,35 @@
+.portada{
+    height: 220px;
+    width: 180px;
+    border-radius: 0.50rem;
+    border: black 1px solid;
+}
+
+.card{
+    background-color: rgb(216, 214, 214);
+    border: black 1px solid;
+    border-radius: 0.50rem;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 220px;
+    height: 320px;
+}
+
+.btn{
+    width: 120px;
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 71, 71);
+    border-color: rgb(15, 15, 15);
+    border-radius: 0.25rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 2% 2%;
+    margin: 2% 0 2% 50px;
+    box-shadow: 0 0 15px #555;
+}

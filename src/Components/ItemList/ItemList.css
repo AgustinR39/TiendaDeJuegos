@@ -1,0 +1,7 @@
+.contenedor_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 1% 20%;
+}
