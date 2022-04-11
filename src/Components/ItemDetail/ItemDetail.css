@@ -1,0 +1,28 @@
+.card_detail{
+    background-color: rgb(216, 214, 214);
+    border: black 1px solid;
+    border-radius: 0.50rem;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 320px;
+    height: 420px;
+}
+
+.contenedor_detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 1% 7%;
+}
+
+.portada_detail{
+    height: 200px;
+    width: 160px;
+    border-radius: 0.50rem;
+    border: black 1px solid;
+}

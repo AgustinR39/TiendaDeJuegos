@@ -1,9 +1,9 @@
-import './ItemListContainer.css'
 import { useState, useEffect } from "react"
 import { getProducts } from "../../asynmock" 
-import ItemList from "../ItemList/ItemList"
+import ItemListDetail from "../ItemListDetail/ItemListDetail"
 
-const ItemListContainer = (props) => {
+
+const ItemDetailContainer = (props) => {
     const [products, setProducts] = useState([])
     
     useEffect(() => {
@@ -15,9 +15,9 @@ const ItemListContainer = (props) => {
     return(
         <div>
             <h1 className="tienda">{props.greeting}</h1>
-            <ItemList products={products}/>
+            <ItemListDetail products={products}/>
         </div>
     )
 }
 
-export default ItemListContainer
+export default ItemDetailContainer

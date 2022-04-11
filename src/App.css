@@ -7,9 +7,15 @@
 
 .botones{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   margin-top: 5px;
+  margin: 2px 50px;
+}
+
+.btnn{
+  padding: 1px 3px;
 }
 
 .img{
