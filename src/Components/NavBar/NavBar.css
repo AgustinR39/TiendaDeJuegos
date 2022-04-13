@@ -13,9 +13,14 @@
 }
 
 .titulo{
-    font-size: 24px;
-    padding: 0 0 0 5%;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
     align-items: center;
+    width: 60px;
+    text-decoration: none;
+    color: white;
 }
 
 .menu{
@@ -26,5 +31,9 @@
     align-items: center;
     flex-wrap: nowrap;
     width: 25%;
+}
+
+.option{
     text-decoration: none;
+    color: white;
 }

@@ -1,13 +1,14 @@
 import './Item.css'
+import { Link } from 'react-router-dom'
 
-const Item = ({name, img}) => {
+const Item = ({id, name, img}) => {
     return(
         <section className='card'>
             <picture>
                 <img className="portada" src={img} alt={name}/>
             </picture>
             <h4>{name}</h4>
-            <button className='btn'>Ver detalles</button>
+            <Link to={`/detail/${id}`} className='btn'>Ver detalles</Link>
         </section>
     )
 }

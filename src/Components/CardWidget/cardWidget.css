@@ -2,15 +2,18 @@
     margin: 0 5% 0 0;
     display: flex;
     align-items: center;
+    background-color: rgb(203, 205, 207);
+    border-radius: 0.25rem;
 }
 
 .carrito{
-    background-color: rgb(203, 205, 207);
-    padding: 2px 2px;
-    height: 40px;
-    width: 40px;
+    padding: 5px 2px;
+    height: 30px;
+    width: 30px;
 }
 
 .n{
-    padding-left: 5px;
+    padding: 0 5px;
+    color: black;
+    font-weight: bolder;
 }
