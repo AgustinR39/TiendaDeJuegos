@@ -1,5 +1,5 @@
 import './NavBar.css'
-import CardWidget from '../CardWidget/cardWidget'
+import CardWidget from '../CardWidget/CardWidget'
 import { useState ,useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { getCategories } from '../../asynmock'

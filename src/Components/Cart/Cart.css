@@ -1,0 +1,13 @@
+.cart{
+    text-align: center;
+}
+
+.cart_obj{
+    text-align: center;
+    margin: 5px 0 10px;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+}
