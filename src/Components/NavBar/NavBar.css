@@ -4,7 +4,7 @@
 }
 
 .navBar{
-    background-color: rgb(22, 21, 21);
+    background-color: rgb(37, 37, 37);
     color: white;
     display: flex;
     flex-direction: row;
@@ -36,4 +36,8 @@
 .option{
     text-decoration: none;
     color: white;
+}
+
+.none{
+    display: none;
 }

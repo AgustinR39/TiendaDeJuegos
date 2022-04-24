@@ -1,7 +1,7 @@
 .carritoDiv{
     margin: 0 5% 0 0;
     display: flex;
-    width: 65px;
+    width: 60px;
     color: black;
     font-weight: bolder;
     align-items: center;
@@ -14,4 +14,9 @@
     padding: 5px 5px;
     height: 30px;
     width: 30px;
+}
+
+.carritoVacio{
+    margin: 0 5% 0 0;
+    width: 60px;
 }

@@ -11,3 +11,19 @@
     font-weight: bold;
     font-size: 20px;
 }
+
+.no_productos{
+    text-align: center;
+    margin: 5% 0 1%;
+}
+
+.btn_menu{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 127, 209);
+    border-radius: 0.50rem;
+    border: rgb(0, 71, 112) 1px solid;
+    padding: 4px;
+    margin-left: 45%;
+}
+

@@ -29,7 +29,7 @@ const ItemDetailContainer = (setCart, cart) => {
         <div className="con_detail">
             {
                 loading ?
-                    <h1>Cargando...</h1> :
+                    <h1 className="no_productos">Cargando...</h1> :
                 product ?
                     <ItemDetail {...product} setCart={setCart} cart={cart} /> :
                     <h1>El producto no existe</h1>
