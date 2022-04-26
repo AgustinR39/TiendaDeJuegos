@@ -2,16 +2,6 @@
     text-align: center;
 }
 
-.cart_obj{
-    text-align: center;
-    margin: 5px 0 10px;
-}
-
-.bold{
-    font-weight: bold;
-    font-size: 20px;
-}
-
 .no_productos{
     text-align: center;
     margin: 5% 0 1%;
@@ -27,3 +17,27 @@
     margin-left: 45%;
 }
 
+.total{
+    background-color: rgb(233, 217, 165);
+    border-radius: 0.50rem;
+    padding: 2px;
+    margin: 3% 45% 0;
+    text-align: center;
+    border: rgb(192, 177, 126) 1px solid;
+}
+
+.btns_finales{
+    margin: 5px 45% 0; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.btn_final{
+    padding: 5px;
+    margin: 5px 2px;
+    background-color: rgb(26, 147, 218);
+    border-radius: 0.50rem;
+    border: rgb(0, 71, 112) 1px solid;
+    color: white;
+}

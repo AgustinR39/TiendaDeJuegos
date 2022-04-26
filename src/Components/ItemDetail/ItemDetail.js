@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { Link } from "react-router-dom"
 import './ItemDetail.css'
 import Counter from '../Counter/Counter'
-import CartContext from "../Context/CardContext"
+import CartContext from "../CartContext/CartContext"
 import Cart from "../Cart/Cart"
 import NotificationContext from "../Notification/Notification"
 
@@ -37,7 +37,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
                     <h4 className="card_text"><span className="negrito">Precio: </span> ${price}</h4>
                 </main>
                 <footer className="detail_footer">
-                    {isInCart(id) ? <Link className="detail_carrito" to='/cart' element={<Cart />}>Ir al carrito</Link> : <Counter onAdd={handleAdd} stock={stock} />}
+                    {isInCart(id) ? <Link className="detail_carrito" to='/cart' component={<Cart />}>Ir al carrito</Link> : <Counter onAdd={handleAdd} stock={stock} />}
                 </footer>
             </div>
         </div>

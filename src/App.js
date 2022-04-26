@@ -4,11 +4,9 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './Components/Cart/Cart';
 import { NotificationProvider } from './Components/Notification/Notification';
-import { CartContextProvider } from './Components/Context/CardContext';
+import { CartContextProvider } from './Components/CartContext/CartContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { useState, createContext } from 'react';
-
-export const Context = createContext()
+import { useState } from 'react';
 
 const App = () => {
   const [cart, setCart] = useState([])

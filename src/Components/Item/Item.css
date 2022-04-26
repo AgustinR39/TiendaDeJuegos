@@ -3,18 +3,17 @@
     width: 180px;
     border-radius: 0.50rem;
     border: black 1px solid;
+    margin-top: 15px;
 }
 
 .card_item{
-    background-color: rgb(216, 214, 214);
+    background-color: rgb(235, 227, 215);
     border: black 1px solid;
     border-radius: 0.50rem;
-    display: flex;
+    display: inline-block;
     color: black;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
     text-align: center;
+    align-items: center;
     width: 220px;
     height: 320px;
     margin: 10px 20px;
@@ -24,13 +23,17 @@
     width: 120px;
     color: rgb(255, 255, 255);
     background-color: rgb(73, 71, 71);
-    border-color: rgb(15, 15, 15);
+    border: rgb(22, 21, 21) 1px solid;
     border-radius: 0.25rem;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 2% 2%;
-    margin: 2% 23%;
+    margin: 2% 0%;
     box-shadow: 0 0 15px #555;
     text-decoration: none;
+}
+
+.detal{
+    margin-top: 10px;
 }

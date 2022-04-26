@@ -1,0 +1,25 @@
+.menu_cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 3% 18% 0;
+    padding: 3% 4%;
+    align-items: center;
+    background-color: rgb(233, 217, 165);
+    border-radius: 0.50rem;
+    border: rgb(192, 177, 126) 1px solid;
+    color: rgb(0, 0, 0);
+}
+
+.footer_cart{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.btn_delete{
+    margin-left: 10px;
+    padding: 2px;
+
+}
