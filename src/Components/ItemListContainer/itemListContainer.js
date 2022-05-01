@@ -32,7 +32,7 @@ const ItemListContainer = () => {
     }, [categoryId])
 
     if(products.length === 0) {
-        return <h1>No hay productos</h1>
+        return <h1 className='tienda'>No hay productos</h1>
     }
 
     return(
