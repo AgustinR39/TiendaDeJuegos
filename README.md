@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Kyouka
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Este es un proyecto realizado para el curso de React JS. Se trata de un ecommerce en el que podrás navegar por distintas categorías y adquirir tu orden de compra de los productos que has seleccionado.
 
-## Available Scripts
+## Installation git clone
 
-In the project directory, you can run:
+Para acceder al proyecto clonándolo, deberás ejecutar en consola:
+```sh
+git clone  https://github.com/AgustinR39/TiendaDeJuegos
+npm install 
+npm start
+```
 
-### `npm start`
+### Installation download ZIP
+```sh
+Ir a “code” > download ZIP
+Descomprimir el archivo
+En la carpeta donde se encuentra “package.json” ejecutar en terminal: 
+npm install
+npm start
+```
+### Techs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🛠️ React JS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🛠️ JavaScript
 
-### `npm test`
+🛠️ HTML
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠️ CSS
 
-### `npm run build`
+### Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para que el proyecto se logre realizar de una manera esperada utilicé las siguientes herramientas:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⚡ React-router-dom: routing de la web
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+⚡ Styled-component: estilos generales
 
-### `npm run eject`
+⚡ React-Firebase: base de datos
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+⚡ React-toastify: notificación de producto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Firebase / Firestore
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Colección: categories. Cada categoría será según lo siguiente:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+|   Campo      | Tipo   |            Valor       |
+| -------------| ------------- | ------------- |
+| Descripcion  | String | Categoría del producto|
 
-## Learn More
+- Colección: Products. Cada product tiene las siguientes características:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+|    Campo      |   Tipo        |   Valor       |
+| ------------- | ------------- | ------------- |
+|   category    |   String      |   Categoría   |
+| description   |   String      |   Description |
+|       img     |   String      |       img     |
+|       name    |   String      |      Nombre   |
+|      place    |   String      |      Lugar    |
+|       price   |   number      |     Precio    |
+|       stock   |   number      |       stock   |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Así lo vas a ver! 
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Funciones *CartContext*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🌱 *addItem* => añade el producto al carrito. En el caso de que el producto ya esté en el carrito, esta función va a evitar que se genere otra línea de ItemCart, solo modificará la cantidad de dicho producto.
 
-### Making a Progressive Web App
+🌱 *getQuantity* => esta función permite que cuando agregas productos al carrito se muestre la cantidad en el CartWidget.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🌱 *isInCart* => reconoce si el producto está o no en el carrito.
 
-### Advanced Configuration
+🌱 *clearCart* => esta función está asociada al botón de vaciar carrito y limpiará todo lo que se encuentre en el.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🌱 *removeItem* => esta función removerá el producto con ese id y seteará el nuevo valor del CartWidget.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🌱 *totalCost* => esta función calcula el valor total de la compra.

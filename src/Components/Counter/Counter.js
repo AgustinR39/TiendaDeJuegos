@@ -1,30 +1,34 @@
 import { useState } from "react"
 import './Counter.css'
 
-const Counter = ({stock, onAdd}) => {
-    const [count, setCount] = useState(1)
+const Counter = ({ onAdd, stock = 0, initial = 1 }) => {
+    const [quantity, setQuantity] = useState(initial)
 
     const decrement = () => {
-        if(count > 1){
-            setCount(count - 1)
+        if(quantity > 1){
+            setQuantity(quantity - 1)
         }
     }
 
     const increment = () => {
-        if(count < 10){
-            setCount(count + 1)
+        if(quantity < stock){
+            setQuantity(quantity + 1)
         }
+    }
+
+    if(stock === 0) {
+        return <button className='detail_carrito' disabled>No hay stock</button>
     }
 
     return(
         <div>
             <div className="botones">
                 <button className="counter" onClick={decrement}>-</button>
-                <p>{count}</p>
+                <p>{quantity}</p>
                 <button className="counter" onClick={increment}>+</button>
             </div>
             <div>
-                <button className="counter" onClick={() => onAdd(count)}>Agregar al carrito</button>
+                <button className="counter" onClick={() => onAdd(quantity)}>Agregar al carrito</button>
             </div>
         </div>
     )

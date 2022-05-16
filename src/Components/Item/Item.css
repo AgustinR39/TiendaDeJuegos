@@ -11,6 +11,7 @@
     border: black 1px solid;
     border-radius: 0.50rem;
     display: inline-block;
+    box-shadow: 0 0 10px #555;
     color: black;
     text-align: center;
     align-items: center;

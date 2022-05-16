@@ -1,0 +1,74 @@
+.title {
+    margin: 0 0 5%;
+}
+
+input {
+    border-radius: 5px;
+    width: 500px;
+    height: 50px;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    margin-bottom: 8%;
+}
+
+.black {
+    border: 2px solid rgba(0, 0, 0, 0.482);
+}
+
+.contenedorForm {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.comprar {
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 127, 209);
+    border-radius: 0.20rem;
+    border: rgb(0, 71, 112) 1px solid;
+    padding: 2%;
+    text-decoration: none;
+}
+
+.procesando {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.tituloCompra {
+    font-family: 'BIZ UDPMincho', serif;
+    font-size: 30px;
+    margin: 5% 0 
+}
+
+.nCompra {
+    margin: 3rem 0;
+    font-weight: bold;
+    font-family: 'BIZ UDPMincho', serif;
+    color:black;
+}
+
+.finalizado{
+    text-align: center;
+}
+
+.inicio{
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 127, 209);
+    border-radius: 0.20rem;
+    border: rgb(0, 71, 112) 1px solid;
+    padding: 1%;
+    text-decoration: none;
+}

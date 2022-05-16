@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import './ItemDetail.css'
 import Counter from '../Counter/Counter'
 import CartContext from "../CartContext/CartContext"
-import Cart from "../Cart/Cart"
+// import Cart from "../Cart/Cart"
 import NotificationContext from "../Notification/Notification"
 
 const ItemDetail = ({id, name, img, category, description, price, stock}) => {
@@ -15,7 +15,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
     const handleAdd = (count) => {
 
         const productObj = {
-            id, name, price
+            id, name, price, quantity: count
         }
 
         addItem({ ...productObj, quantity: count})
@@ -37,7 +37,12 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
                     <h4 className="card_text"><span className="negrito">Precio: </span> ${price}</h4>
                 </main>
                 <footer className="detail_footer">
-                    {isInCart(id) ? <Link className="detail_carrito" to='/cart' component={<Cart />}>Ir al carrito</Link> : <Counter onAdd={handleAdd} stock={stock} />}
+                    {/* {
+                        false
+                            ? <Link to='/cart'  className="detail_carrito">Ir al Carrito</Link>
+                            : <Counter onAdd={handleAdd} stock={stock} initial={getQuantityProd(id)}/>
+                    } */}
+                    {isInCart(id) ? <Link className="detail_carrito" to='/cart' >Ir al carrito</Link> : <Counter onAdd={handleAdd} stock={stock} />}
                 </footer>
             </div>
         </div>

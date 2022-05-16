@@ -14,9 +14,7 @@
 
 .titulo{
     font-size: 20px;
-    display: flex;
-    justify-content: end;
-    padding-right: 5%;
+    padding-left: 5%;
     align-items: center;
     width: 60px;
     text-decoration: none;
