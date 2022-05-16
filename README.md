@@ -63,7 +63,7 @@ Para que el proyecto se logre realizar de una manera esperada utilicé las sigui
 
 # Así lo vas a ver! 
 
-
+https://github.com/AgustinR39/TiendaDeJuegos/blob/master/src/DOC/Video.mp4
 
 ### Funciones *CartContext*
 
